@@ -12,3 +12,10 @@ def submitted_form():
     email = request.form['email']
     site = request.form['site_url']
     comments = request.form['comments']
+
+return render_template(
+                       'submitted_form.html',
+                       name=name,
+                       email=email,
+                       site=site,
+                       comments=comments)
